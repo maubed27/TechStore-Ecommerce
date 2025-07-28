@@ -1,0 +1,60 @@
+# class Student:
+#     clg_ame="ABCDDD"
+#     def __init__(self,name,marks):
+#         self.name=name
+#         self.marks=marks
+#         print("Adding new Student")
+
+# s1=Student("Kiran",90) 
+# print(s1.name,s1.marks)
+# print(Student.clg_ame)
+
+
+# class Student:
+#     @staticmethod
+#     def __init__():
+#         print("Hello")  
+
+# class Account:
+#     def __init__(self,bal,acc):
+#         self.balance=bal
+#         self.account=acc
+    
+#     def debit(self,amount):
+#         self.balance-=amount
+#         print("RS",amount,"was debited")
+#         print("Total balance =",self.get_balance)
+
+#     def credit(self,amount):
+#         self.balance+=amount
+#         print("RS",amount,"was credit")
+#         print("Total balance =",self.get_balance)
+
+#     def get_balance(self):
+#         return self.balance
+
+# acc1=Account(100000,123)
+# # print(acc1.balance)
+# # print(acc1.account)
+# acc1.debit(500)
+# acc1.credit(1000)
+
+
+import random
+
+target=random.randint(1,100)
+
+while True:
+    userChoice=int(input("GUess the Number:"))
+
+    if(userChoice==target):
+        print("You Guesses the number")
+        break
+    elif(userChoice<target):
+        print("guessed number is too low")
+    else:
+        print("guesses number is too high")
+print("GAme OVer-----")
+
+
+        
